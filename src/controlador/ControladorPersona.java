@@ -38,21 +38,11 @@ public class ControladorPersona {
         });
     }
 
-//    public void iniciarControl(){
-//        vista.getBtnActualizar().addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//            }
-//        });
-//    }
+
     public void iniciarControl() {
         vista.getBtnActualizar().addActionListener(l -> cargaPersonas());
 
-        //jDialog
-        /*vista.getBtnCrear().addActionListener(l -> abrirDialogo(1));
-        vista.getBtnEditar().addActionListener(l -> abrirDialogo(2));*/
-        //***
+
         vista.getBtnCrear().addActionListener(l -> abrirDialogCrear());
         vista.getBtnEditar().addActionListener(l -> abrirYCargarDatosEnElDialog());
         //***
@@ -62,25 +52,6 @@ public class ControladorPersona {
         buscarPersona();//Llama al metodo de "buscarPersona"
     }
 
-    //jDialog
-    /*private void abrirDialogo(int ce) {
-        String title;
-        if (ce == 1) {
-            title = "Crear nueva persona";
-            vista.getDlgPersona().setName(title);
-        } else {
-
-            title = "Editar";
-            vista.getDlgPersona().setName(title);
-            cargarDatosPersona();
-        }
-
-        vista.getDlgPersona().setLocationRelativeTo(vista);
-        vista.getDlgPersona().setSize(1100, 500);
-        vista.getDlgPersona().setTitle(title);
-        vista.getDlgPersona().setVisible(true);
-    }*/
-    //***
     public void abrirDialogCrear() {
         vista.getDlgPersona().setName("Crear nueva persona");
         vista.getDlgPersona().setLocationRelativeTo(vista);
