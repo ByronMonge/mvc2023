@@ -83,12 +83,6 @@ public class VistaPersonas extends javax.swing.JInternalFrame { //Esto se pone p
 
         jLabel5.setText("Apellidos:");
 
-        txtNombres.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNombresActionPerformed(evt);
-            }
-        });
-
         labelFoto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         btnExaminar.setText("Examinar");
@@ -238,11 +232,6 @@ public class VistaPersonas extends javax.swing.JInternalFrame { //Esto se pone p
         btnEliminar.setText("Eliminar");
 
         btnCrear.setText("Crear");
-        btnCrear.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCrearActionPerformed(evt);
-            }
-        });
 
         btnEditar.setText("Editar");
 
@@ -338,14 +327,6 @@ public class VistaPersonas extends javax.swing.JInternalFrame { //Esto se pone p
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txtNombresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombresActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNombresActionPerformed
-
-    private void btnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCrearActionPerformed
 
     // Set y  Get
     public JButton getBtnActualizar() {
